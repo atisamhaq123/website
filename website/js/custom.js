@@ -44,3 +44,13 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+
+// aos for animation
+document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+      duration: 600, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Easing function
+      once: true, // Whether animation should happen only once
+      mirror: false, // Whether elements should animate out while scrolling past them
+    });
+  });
